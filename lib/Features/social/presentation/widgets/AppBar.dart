@@ -1,9 +1,5 @@
 // CustomAppBar.dart
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:smcc_app/Features/social/presentation/bloc/home_cubit/cubit/home_page_cubit.dart';
 import 'package:smcc_app/Features/social/presentation/widgets/rewards_card.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
