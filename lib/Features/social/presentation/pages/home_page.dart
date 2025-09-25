@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
     return BlocProvider(
       create: (_) => HomePageCubit()..loadProgress(0.65),
       child: Scaffold(
-        appBar: CustomAppBar(),
+        appBar: CustomAppBar() ,
         body: ListView(
           children: [
             // Progress Container

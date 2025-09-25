@@ -70,7 +70,7 @@ class _CustomBottomNavState extends State<CustomBottomNav> {
             label: "العربة",
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.person_fill),
+            icon: Icon(CupertinoIcons.person_fill), 
             label: "حسابك",
           ),
         ],

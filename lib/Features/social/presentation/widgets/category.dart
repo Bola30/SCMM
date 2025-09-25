@@ -6,7 +6,6 @@ class CategoriesSection extends StatelessWidget {
     "assets/images/tiktok.png",
     "assets/images/x.png",
     "assets/images/insta.png",
-
     "assets/images/youtube.png",
   ];
 
@@ -20,11 +19,11 @@ class CategoriesSection extends StatelessWidget {
         child: ListView.separated(
           scrollDirection: Axis.horizontal,
           itemCount: categoryImages.length,
-          separatorBuilder: (_, __) => const SizedBox(width: 24),
+          separatorBuilder: (context, index) => const SizedBox(width: 18),
           itemBuilder: (context, index) {
             return Container(
-              width: 55,
-              height: 60,
+              height: 51.79 ,
+              width: 57.6,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(categoryImages[index]),

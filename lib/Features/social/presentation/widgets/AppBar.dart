@@ -1,4 +1,6 @@
 // CustomAppBar.dart
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smcc_app/Features/social/presentation/bloc/home_cubit/cubit/home_page_cubit.dart';
@@ -109,7 +111,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
 
         Positioned(
-          bottom: -75,
+          bottom: -70,
           left: 10,
           right: 10,
           child: BlocBuilder<HomePageCubit, HomePageState>(
@@ -211,13 +213,18 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                       // Progress bar
                     ],
                   ),
+                  
                 );
+              
               }
               return const SizedBox();
             },
           ),
+          
         ),
       ],
+
     );
+
   }
 }
