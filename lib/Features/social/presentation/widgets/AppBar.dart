@@ -1,4 +1,3 @@
-// CustomAppBar.dart
 import 'package:flutter/material.dart';
 import 'package:smcc_app/Features/social/presentation/widgets/rewards_card.dart';
 
@@ -14,7 +13,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       clipBehavior: Clip.none,
 
       children: [
-
         Container(
           height: preferredSize.height,
           decoration: const BoxDecoration(
@@ -23,20 +21,20 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               fit: BoxFit.cover,
             ),
           ),
-          child: SafeArea(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 8),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Stack(
-                            children: [  SizedBox(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 26),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Stack(
+                          children: [
+                            SizedBox(
                               height: 60,
                               width: 60,
                               child: CircleAvatar(
@@ -46,7 +44,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                                 ),
                                 radius: 22,
                               ),
-                              
                             ),
                             Positioned(
                               top: 35,
@@ -58,59 +55,54 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                                 width: 20,
                                 height: 20,
                               ),
-                            )
-                            ],
-                           
-                          ),
-                          SizedBox(width: 10),
-                          Row(
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "مرحباً بك، مايكل 👋",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 22,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                    textDirection: TextDirection.rtl,
+                            ),
+                          ],
+                        ),
+                        SizedBox(width: 10),
+                        Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "مرحباً بك، مايكل 👋",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
                                   ),
-                                  SizedBox(height: 4),
-                                  Text(
-                                    "مميز",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 18,
-                                    ),
-                                    textDirection: TextDirection.rtl,
+                                  textDirection: TextDirection.rtl,
+                                ),
+                                SizedBox(height: 4),
+                                Text(
+                                  "مميز",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18,
                                   ),
-                                ],
-                              ),
-                              SizedBox(width: 50),
-
-                              Image.asset(
-                                'assets/images/logo.png',
-                                width: 120,
-                                height: 120,
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
+                                  textDirection: TextDirection.rtl,
+                                ),
+                              ],
+                            ),
+                            SizedBox(width: 50),
+          
+                            Image.asset(
+                              'assets/images/logo.png',
+                              width: 120,
+                              height: 120,
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
-                  ],
-                ),
-              ],
-            ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
-
-      RewardsCard()
+        RewardsCard(),
       ],
-
     );
-
   }
 }

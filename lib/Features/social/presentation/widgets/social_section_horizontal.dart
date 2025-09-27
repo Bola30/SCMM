@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:smcc_app/Features/social/domain/entities/social_item.dart';
+import 'package:smcc_app/Features/social/presentation/widgets/Add_Button.dart';
 
 class SocialSectionHorizontal extends StatefulWidget {
   const SocialSectionHorizontal({super.key});
 
   @override
-  State<SocialSectionHorizontal> createState() => _SocialSectionHorizontalState();
+  State<SocialSectionHorizontal> createState() =>
+      _SocialSectionHorizontalState();
 }
 
 class _SocialSectionHorizontalState extends State<SocialSectionHorizontal> {
@@ -21,19 +23,18 @@ class _SocialSectionHorizontalState extends State<SocialSectionHorizontal> {
         subtitle: '500',
         currency: 'جنيه',
       ),
-            SocialItem(
+      SocialItem(
         asset: 'assets/images/Frame.png',
         title: 'لايكات بكميات كبيرة',
         subtitle: '500',
         currency: 'جنيه',
       ),
-       SocialItem(
+      SocialItem(
         asset: 'assets/images/Frame.png',
         title: 'لايكات بكميات كبيرة',
         subtitle: '500',
         currency: 'جنيه',
       ),
-    
     ];
     if (favorites.length != items.length) {
       favorites = List.generate(items.length, (_) => false);
@@ -122,20 +123,7 @@ class _SocialSectionHorizontalState extends State<SocialSectionHorizontal> {
                       ],
                     ),
                     const Spacer(),
-
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: FloatingActionButton(
-                        mini: true,
-                        backgroundColor: const Color(0xFF1C77FD),
-                        onPressed: () {},
-                        elevation: 0,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: const Icon(Icons.add, color: Colors.white),
-                      ),
-                    ),
+                    CustomFloatingButton(),
                   ],
                 ),
               ),
