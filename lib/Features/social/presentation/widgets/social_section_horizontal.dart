@@ -49,8 +49,8 @@ class _SocialSectionHorizontalState extends State<SocialSectionHorizontal> {
         itemBuilder: (context, index) {
           final item = items[index];
           return SizedBox(
-            width: 160,
-            height: 220,
+            width: 180,
+            height: 240,
             child: Card(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
@@ -65,8 +65,8 @@ class _SocialSectionHorizontalState extends State<SocialSectionHorizontal> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                          height: 23,
-                          width: 23,
+                          height: 25,
+                          width: 25,
                           decoration: BoxDecoration(
                             color: Colors.white,
 
