@@ -9,7 +9,6 @@ class CustomFloatingButton extends StatelessWidget {
     this.backgroundColor = const Color(0xFF1C77FD),
     this.icon = Icons.add,
     this.iconColor = Colors.white,
-    this.size = 20.0, // mini FAB size
   });
 
   final VoidCallback? onPressed;
@@ -17,25 +16,30 @@ class CustomFloatingButton extends StatelessWidget {
   final Color backgroundColor;
   final IconData icon;
   final Color iconColor;
-  final double size;
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: alignment,
-      child: FloatingActionButton(
-        mini: true,
-        backgroundColor: backgroundColor,
-        onPressed: onPressed,
-        elevation: 0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(size),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        SizedBox(
+          height: 35,
+          width: 35,
+          child: FloatingActionButton(
+            
+            backgroundColor: backgroundColor,
+            onPressed: onPressed,
+            elevation: 0,
+            shape: RoundedRectangleBorder(
+              borderRadius:BorderRadius.circular(20),
+            ),
+            child: Icon(
+              icon,
+              color: iconColor,
+            ),
+          ),
         ),
-        child: Icon(
-          icon,
-          color: iconColor,
-        ),
-      ),
+      ],
     );
   }
 }

@@ -1,8 +1,8 @@
 class SocialItemModel {
   final String id;
   final String name;
-  final String iconPath; // مكان الأيقونة سواء asset أو url
-  final String? description; // لو محتاج وصف
+  final String iconPath; 
+  final String? description; 
 
   SocialItemModel({
     required this.id,

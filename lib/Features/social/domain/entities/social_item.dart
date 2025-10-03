@@ -1,13 +1,15 @@
 class SocialItem {
-  final String title;         // اسم السوشيال (فيسبوك / انستجرام)
-  final String subtitle;   // وصف المنتج (لايكات بكميات كبيرة)
-  final String asset;         // الصورة أو الأيقونة
-  final String currency;      // العملة (جنيه، دولار ...)
+  final String title;
+  final String subtitle;
+  final String asset;
+  final String currency;
+  final String? oldPrice;
 
   const SocialItem({
     required this.title,
     required this.subtitle,
     required this.asset,
-    this.currency = "جنيه", // قيمة افتراضية
+    this.currency = "جنيه",
+    this.oldPrice,
   });
 }

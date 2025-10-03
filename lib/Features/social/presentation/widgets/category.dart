@@ -55,11 +55,14 @@ class CategoryHeader extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () {},
-          child: Row(
-            children: [
-              const Text(' شاهد الكل', style: TextStyle(color: Colors.black)),
-              Icon(Icons.arrow_forward_ios, size: 12, color: Colors.black),
-            ],
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: Row(
+              children: [
+                const Text(' شاهد الكل', style: TextStyle(color: Colors.black)),
+                Icon(Icons.arrow_forward_ios, size: 12, color: Colors.black),
+              ],
+            ),
           ),
         ),
       ],

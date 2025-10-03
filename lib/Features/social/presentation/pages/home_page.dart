@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 50),
             CategoriesSection(),
             const SizedBox(height: 12),
-            const CategoryHeader(title: 'طالبات سايقة'),
+            const CategoryHeader(title: ' طالبات سايقة' ),
             SocialSectionHorizontal(),
             const SizedBox(height: 12),
             const SocialSectionVertical(),
